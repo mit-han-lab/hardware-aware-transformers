@@ -1,5 +1,7 @@
 # HAT: Hardware Aware Transformers for Efficient Natural Language Processing
 
+under development; paper and code will be available soon. 
+
 ```bash
 @inproceedings{
   wang2020hat,
@@ -10,4 +12,4 @@
 }
 ```
 
-We present HAT framework to search for efficient Transformer architecture **specialized** for different hardware.
+We present HAT framework to efficiently search efficient transformer architectures that are **specialized** for different hardware.
