@@ -1,6 +1,6 @@
-# HAT: Hardware Aware Transformers for Efficient Natural Language Processing
+# HAT: Hardware Aware Transformers for Efficient Natural Language Processing ([paper](https://github.com/mit-han-lab/hardware-aware-transformers/blob/master/HAT_ACL.pdf))
 
-under development; paper and code will be available soon. 
+under development; code will be available soon. 
 
 ```bash
 @inproceedings{
