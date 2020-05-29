@@ -1,0 +1,66 @@
+# model
+arch: transformersuper_wmt_en_de
+share-all-embeddings: True
+max-tokens: 4096
+data: data/binary/wmt16_en_de
+
+# training settings
+optimizer: adam
+adam-betas: (0.9, 0.98)
+clip-norm: 0.0
+weight-decay: 0.0
+dropout: 0.3
+attention-dropout: 0.1
+criterion: label_smoothed_cross_entropy
+label-smoothing: 0.1
+
+ddp-backend: no_c10d
+fp16: True
+
+# warmup from warmup-init-lr to max-lr (warmup-updates steps); then cosine anneal to lr (max-update - warmup-updates steps)
+update-freq: 16
+max-update: 40000
+warmup-updates: 10000
+lr-scheduler: cosine
+warmup-init-lr: 1e-7
+max-lr: 0.001
+lr: 1e-7
+lr-shrink: 1
+
+# logging
+keep-last-epochs: 20
+save-interval: 10
+validate-interval: 10
+
+# SuperTransformer configs
+encoder-embed-dim: 640
+decoder-embed-dim: 640
+
+encoder-ffn-embed-dim: 3072
+decoder-ffn-embed-dim: 3072
+
+encoder-layers: 6
+decoder-layers: 6
+
+encoder-attention-heads: 8
+decoder-attention-heads: 8
+
+qkv-dim: 512
+
+# SubTransformers search space
+encoder-embed-choice: [640, 512]
+decoder-embed-choice: [640, 512]
+
+encoder-ffn-embed-dim-choice: [3072, 2048, 1024]
+decoder-ffn-embed-dim-choice: [3072, 2048, 1024]
+
+encoder-layer-num-choice: [6]
+decoder-layer-num-choice: [6, 5, 4, 3, 2, 1]
+
+encoder-self-attention-heads-choice: [8, 4]
+decoder-self-attention-heads-choice: [8, 4]
+decoder-ende-attention-heads-choice: [8, 4]
+
+# for arbitrary encoder decoder attention. -1 means attending to last one encoder layer
+# 1 means last two encoder layers, 2 means last three encoder layers
+decoder-arbitrary-ende-attn-choice: [-1, 1, 2]

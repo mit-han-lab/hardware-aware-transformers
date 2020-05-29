@@ -1,0 +1,16 @@
+encoder-embed-dim-subtransformer: 512
+decoder-embed-dim-subtransformer: 512
+
+encoder-ffn-embed-dim-all-subtransformer: [1024, 1024, 1024, 1024, 1024, 1024]
+decoder-ffn-embed-dim-all-subtransformer: [2048]
+
+encoder-layer-num-subtransformer: 6
+decoder-layer-num-subtransformer: 1
+
+encoder-self-attention-heads-all-subtransformer: [4, 4, 2, 4, 4, 4]
+decoder-self-attention-heads-all-subtransformer: [4]
+decoder-ende-attention-heads-all-subtransformer: [4]
+
+# for arbitrary encoder decoder attention. -1 means attending to last one encoder layer
+# 1 means last two encoder layers, 2 means last three encoder layers
+decoder-arbitrary-ende-attn-all-subtransformer: [-1]

@@ -1,0 +1,10 @@
+lat-dataset-path: ./latency_dataset/wmt14enfr_cpu_xeon_all.csv
+feature-norm: [640, 6, 2048, 6, 640, 6, 2048, 6, 6, 2]
+lat-norm: 300
+feature-dim: 10
+hidden-dim: 400
+hidden-layer-num: 3
+ckpt-path: ./latency_dataset/predictors/wmt14enfr_cpu_xeon.pt
+train-steps: 5000
+bsz: 128
+lr: 1e-5

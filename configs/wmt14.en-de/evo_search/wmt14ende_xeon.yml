@@ -1,0 +1,22 @@
+evo-iter: 30
+population-size: 125
+parent-size: 25
+mutation-size: 50
+crossover-size: 50
+mutation-prob: 0.3
+
+
+# path to load latency predictor
+ckpt-path: ./latency_dataset/predictors/wmt14ende_cpu_xeon.pt
+# feature-norm should match with that when train the latency predictor
+feature-norm: [640, 6, 2048, 6, 640, 6, 2048, 6, 6, 2]
+# lat-norm should match with that when train the latency predictor
+lat-norm: 300
+# path to load supertransformer weights
+restore-file: ./downloaded_models/HAT_wmt14ende_super_space0.pt
+
+
+# path to write subtransformer configs
+write-config-path: configs/wmt14.en-de/subtransformer/wmt14ende_xeon@200ms.yml
+# latency constraint
+latency-constraint: 200

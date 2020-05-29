@@ -1,0 +1,22 @@
+evo-iter: 30
+population-size: 125
+parent-size: 25
+mutation-size: 50
+crossover-size: 50
+mutation-prob: 0.3
+
+
+# path to load latency predictor
+ckpt-path: ./latency_dataset/predictors/iwslt14deen_gpu_titanxp.pt
+# feature-norm should match with that when train the latency predictor
+feature-norm: [640, 6, 2048, 6, 640, 6, 2048, 6, 6, 2]
+# lat-norm should match with that when train the latency predictor
+lat-norm: 200
+# path to load supertransformer weights
+restore-file: ./downloaded_models/HAT_iwslt14deen_super_space1.pt
+
+
+# path to write subtransformer configs
+write-config-path: configs/iwslt14.de-en/subtransformer/iwslt14deen_titanxp@200ms.yml
+# latency constraint
+latency-constraint: 200
