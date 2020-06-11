@@ -1,6 +1,5 @@
 # HAT: Hardware Aware Transformers for Efficient Natural Language Processing [[paper]](https://arxiv.org/abs/2005.14187) [[website]](https://hanlab.mit.edu/projects/hat/)
 
-If you find this repo helpful, please kindly cite our work :-)
 
 ```
 @inproceedings{hanruiwang2020hat,
