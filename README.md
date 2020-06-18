@@ -54,7 +54,7 @@ bash configs/[task_name]/get_preprocessed.sh
 
 
 ### Testing
-We provide pre-trained models (SubTransformers) on the Machine Translation tasks for evaluations.
+We provide pre-trained models (SubTransformers) on the Machine Translation tasks for evaluations. The #Params and FLOPs do not count in the embedding lookup table and the last output layers because they are dependent on tasks.
 
 | Task | Hardware | Latency | #Params<br>(M) | FLOPs<br>(G) | BLEU | Sacre<br>BLEU | model_name | Link |
 |:-----------:|:-----------:|:-----------:|:-----------:|:-----------:|:-----------|:-----------:|:-----------|:-----------:|
