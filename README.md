@@ -1,4 +1,4 @@
-# HAT: Hardware Aware Transformers for Efficient Natural Language Processing [[paper]](https://arxiv.org/abs/2005.14187) [[website]](https://hat.mit.edu)
+# HAT: Hardware Aware Transformers for Efficient Natural Language Processing [[paper]](https://arxiv.org/abs/2005.14187) [[website]](https://hat.mit.edu) [[video]](https://youtu.be/N_tH1jIbqCw)
 
 
 ```
