@@ -98,6 +98,10 @@ def cli_main():
 
     # one GPU is fast enough to do the search
     args.distributed_world_size = 1
+                  
+    # if search on CPU, use fp32 as default
+    if args.cpu:
+        args.fp16 = False
 
     main(args)
 
