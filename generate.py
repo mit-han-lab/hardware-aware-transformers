@@ -31,6 +31,10 @@ def main(args):
     print(args)
 
     use_cuda = torch.cuda.is_available() and not args.cpu
+    
+    # when running on CPU, use fp32 as default
+    if not use_cuda:
+        args.fp16 = False
 
     # Load dataset splits
     task = tasks.setup_task(args)
