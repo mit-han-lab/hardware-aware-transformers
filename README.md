@@ -11,6 +11,9 @@
 ```
 
 
+## News
+- HAT is covered by [VentureBeat](https://venturebeat.com/ai/new-ai-technique-speeds-up-language-models-on-edge-devices/)
+
 ## Overview
 We release the PyTorch code and 50 pre-trained models for HAT: Hardware-Aware Transformers. Within a Transformer supernet (SuperTransformer), we efficiently search for a specialized fast model (SubTransformer) for each hardware with latency feedback. The search cost is reduced by over 10000×.
 ![teaser](https://hanruiwang.me/project_pages/hat/assets/teaser.jpg)
