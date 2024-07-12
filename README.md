@@ -18,13 +18,13 @@
 
 ## Overview
 We release the PyTorch code and 50 pre-trained models for HAT: Hardware-Aware Transformers. Within a Transformer supernet (SuperTransformer), we efficiently search for a specialized fast model (SubTransformer) for each hardware with latency feedback. The search cost is reduced by over 10000×.
-![teaser](https://hanruiwang.me/project_pages/hat/assets/teaser.jpg)
+![teaser](assets/teaser.jpg)
 
 HAT Framework overview:
-![overview](https://hanruiwang.me/project_pages/hat/assets/overview.jpg)
+![overview](assets/overview.jpg)
 
 HAT models achieve up to 3× speedup and 3.7× smaller model size with no performance loss.
-![results](https://hanruiwang.me/project_pages/hat/assets/results.jpg)
+![results](assets/results.jpg)
 
 
 ## Usage
