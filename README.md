@@ -13,7 +13,7 @@
 
 ## News
 - HAT is covered by [VentureBeat](https://venturebeat.com/ai/new-ai-technique-speeds-up-language-models-on-edge-devices/).
-- HAT is covered by [MIT News](https://venturebeat.com/ai/new-ai-technique-speeds-up-language-models-on-edge-devices/).
+- HAT is covered by [MIT News](https://news.mit.edu/2020/shrinking-deep-learning-carbon-footprint-0807).
 
 
 ## Overview
